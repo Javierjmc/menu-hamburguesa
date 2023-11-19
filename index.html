@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Menu</title>
+</head>
+<body class="h-screen bg-gradient-to-b from-black to-blue-900 text-xl font-semibold">
+    <nav>
+        <div id="icono-hamburguesa" class="w-10 absolute top-2 right-6 md:hidden invert z-50">
+            <img src="/img/burger.png" alt="burger" class="max-w-full">
+        </div>
+        <ul id="menu" class="flex flex-col md:flex-row items-center bg-blue-100 duration-[0.4s] translate-y-[-100%] md:translate-y-[0]">
+            <li class="p-[1em]">
+                <a href="#">INICIO</a>
+            </li>
+            <li class="p-[1em]">
+                <a href="#">QUIEN SOY</a>
+            </li>
+            <li class="p-[1em]">
+                <a href="#">PORTAFOLIO</a>
+            </li>
+            <li class="p-[1em]">
+                <a href="#">CONTACTO</a>
+            </li>
+        </ul>
+    </nav>
+    <script src="/main.js"></script>
+</body>
+</html>
