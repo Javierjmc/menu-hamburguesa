@@ -7,26 +7,53 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Menu</title>
 </head>
-<body class="h-screen bg-gradient-to-b from-black to-blue-900 text-xl font-semibold">
-    <nav>
+<body class="h-screen bg-gradient-to-b from-black to-blue-900">
+    <nav class="text-xl font-semibold">
         <div id="icono-hamburguesa" class="w-10 absolute top-2 right-6 md:hidden invert z-50">
-            <img src="/img/burger.png" alt="burger" class="max-w-full">
+            <img src="/img/burger.png" alt="burger" class="max-w-full ">
         </div>
+
+        <div id="icono-logo" class="w-10 absolute top-2 left-6 md:hidden  z-50">
+            <img src="/img/logo-javier.png" alt="logo" class="max-w-full ">
+        </div>
+
         <ul id="menu" class="flex flex-col md:flex-row items-center bg-blue-100 duration-[0.4s] translate-y-[-100%] md:translate-y-[0]">
-            <li class="p-[1em]">
+                   
+            <li class="p-[0.5em] hover:text-blue-500">
                 <a href="#">INICIO</a>
             </li>
-            <li class="p-[1em]">
+            <li class="p-[0.5em] hover:text-blue-500">
                 <a href="#">QUIEN SOY</a>
             </li>
-            <li class="p-[1em]">
+            <li class="p-[0.5em] hover:text-blue-500">
                 <a href="#">PORTAFOLIO</a>
             </li>
-            <li class="p-[1em]">
+            <li class="p-[0.5em] hover:text-blue-500">
                 <a href="#">CONTACTO</a>
             </li>
         </ul>
+
+        <div id="icono-logo" class="w-10 absolute top-1 right-6 hidden md:flex z-50">
+            <img src="/img/logo-javier.png" alt="logo" class="max-w-full ">
+        </div>
+
     </nav>
+
+    <section id="contenedor-principal" class="translate-y-[-160px] md:translate-y-[0] duration-[0.4s]  p-6">
+        <div class="flex flex-col items-center md:flex-row md:justify-around">
+            <div class="bg-blue-100 rounded flex flex-col w-full md:w-[450px] p-4 transition duration-700 ease-in-out hover:border-b-2 hover:border-blue-600">
+                <h1 class="text-3xl">Desarrollo web</h1>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Hic rem incidunt autem itaque placeat provident aut nesciunt blanditiis perferendis! Placeat ea, dolore expedita praesentium quidem dignissimos rerum. Enim, ullam aperiam.</p>
+                
+                <button class="w-full bg-gray-600 p-2 rounded text-xl font-semibold text-white transition duration-700 ease-in-out hover:bg-blue-700 hover:border-blue-700">
+                      Enterate de mas                     
+                </button>
+            </div>
+            
+        </div>
+            
+    </section>
+
     <script src="/main.js"></script>
 </body>
 </html>
